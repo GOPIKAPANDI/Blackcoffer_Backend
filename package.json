@@ -1,0 +1,22 @@
+{
+  "homepage": "http:GOPIKAPANDI.github.io/Blackcoffer_Assignment", 
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
