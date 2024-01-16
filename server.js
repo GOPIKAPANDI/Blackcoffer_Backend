@@ -18,6 +18,14 @@ const DataSchema = new mongoose.Schema({
 
 const DataModel = mongoose.model('data', DataSchema, 'data');
 
+app.get('/',async(req,res)=>{
+  try{
+    res.status(200).send('Server started');
+  }catch(error){
+    res.send(500).json({message : "Internal server error"});
+  }
+})
+
 app.get('/api/data', async (req, res) => {
   try {
     const data = await DataModel.find();
